@@ -1,6 +1,10 @@
+OBJS = main.o ClassA.o
 
-build:
-	g++ main.cpp -o executable
+executable: $(OBJS)
+	c++ $^ -o $@
 
 start:
 	./executable
+
+%.o: %.cpp
+	c++ -c $< -o $@
