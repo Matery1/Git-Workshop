@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-	cout << "Hello World" << endl;
+	cout << "Working on Feature XYZ" << endl;
 	ClassA a;
 	a.printName();
 
